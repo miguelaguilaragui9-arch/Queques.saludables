@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queques Saludables</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #fffaf0;
+      color: #333;
+    }
+
+    header {
+      background: #6b8e23;
+      color: white;
+      text-align: center;
+      padding: 30px 15px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 17px;
+    }
+
+    nav {
+      background: #4f6f1b;
+      text-align: center;
+      padding: 12px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    .inicio {
+      text-align: center;
+      padding: 45px 20px;
+    }
+
+    .inicio h2 {
+      color: #6b8e23;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .inicio p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .boton {
+      display: inline-block;
+      background: #6b8e23;
+      color: white;
+      padding: 13px 22px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .productos {
+      padding: 35px 20px;
+      text-align: center;
+    }
+
+    .productos h2 {
+      color: #6b8e23;
+      margin-bottom: 25px;
+      font-size: 28px;
+    }
+
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .producto {
+      background: white;
+      width: 280px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+    }
+
+    .producto .imagen {
+      background: #e8efd5;
+      height: 160px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    .producto h3 {
+      color: #6b8e23;
+      margin-bottom: 8px;
+    }
+
+    .precio {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 12px 0;
+    }
+
+    .nosotros {
+      background: #eef4df;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .nosotros h2 {
+      color: #6b8e23;
+      margin-bottom: 15px;
+    }
+
+    .contacto {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .contacto h2 {
+      color: #6b8e23;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #4f6f1b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🧁 Queques Saludables</h1>
+    <p>Deliciosos, caseros y preparados con ingredientes seleccionados</p>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section class="inicio" id="inicio">
+    <h2>¡Disfruta algo rico y saludable!</h2>
+    <p>
+      Queques caseros ideales para compartir en familia,
+      elaborados con ingredientes de calidad.
+    </p>
+
+    <a class="boton" href="#productos">Ver productos</a>
+  </section>
+
+  <section class="productos" id="productos">
+    <h2>Nuestros Queques</h2>
+
+    <div class="contenedor">
+
+      <div class="producto">
+        <div class="imagen">🍌</div>
+        <h3>Queque de Plátano</h3>
+        <p>Suave, casero y delicioso.</p>
+        <div class="precio">S/ 15.00</div>
+        <a class="boton" href="https://wa.me/51999999999">
+          Pedir
+        </a>
+      </div>
+
+      <div class="producto">
+        <div class="imagen">🍫</div>
+        <h3>Queque de Chocolate</h3>
+        <p>Un sabor delicioso para disfrutar.</p>
+        <div class="precio">S/ 18.00</div>
+        <a class="boton" href="https://wa.me/51999999999">
+          Pedir
+        </a>
+      </div>
+
+      <div class="producto">
+        <div class="imagen">🥕</div>
+        <h3>Queque de Zanahoria</h3>
+        <p>Una opción casera y deliciosa.</p>
+        <div class="precio">S/ 17.00</div>
+        <a class="boton" href="https://wa.me/51999999999">
+          Pedir
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="nosotros" id="nosotros">
+    <h2>Sobre Nosotros</h2>
+
+    <p>
+      Somos un pequeño emprendimiento dedicado a preparar
+      queques caseros con ingredientes seleccionados,
+      buscando ofrecer productos deliciosos para nuestros clientes.
+    </p>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <h2>📱 Haz tu pedido</h2>
+
+    <p>Escríbenos por WhatsApp para realizar tu pedido.</p>
+
+    <br>
+
+    <a class="boton" href="https://wa.me/51999999999">
+      💬 WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 Queques Saludables</p>
+    <p>Hecho con ❤️</p>
+  </footer>
+
+</body>
+</html>
